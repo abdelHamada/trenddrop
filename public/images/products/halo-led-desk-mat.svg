@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="420" viewBox="0 0 520 420" role="img" aria-label="Halo LED Desk Mat">
+  <rect width="520" height="420" fill="#f8fafc"/>
+  <rect x="72" y="112" width="376" height="180" rx="28" fill="#111827"/>
+  <rect x="89" y="129" width="342" height="146" rx="20" fill="#1f2937"/>
+  <rect x="101" y="141" width="318" height="122" rx="16" fill="#334155"/>
+  <path d="M102 265h316" stroke="#34d399" stroke-width="7" stroke-linecap="round"/>
+  <path d="M102 140h316" stroke="#60a5fa" stroke-width="7" stroke-linecap="round"/>
+  <rect x="185" y="76" width="150" height="24" rx="12" fill="#cbd5e1"/>
+  <circle cx="390" cy="96" r="18" fill="#f97316"/>
+  <text x="260" y="358" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#111827">Halo LED Desk Mat</text>
+</svg>

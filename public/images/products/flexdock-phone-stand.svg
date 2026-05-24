@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="420" viewBox="0 0 520 420" role="img" aria-label="FlexDock Aluminum Phone Stand">
+  <rect width="520" height="420" fill="#ffffff"/>
+  <circle cx="130" cy="104" r="88" fill="#dcfce7"/>
+  <circle cx="398" cy="276" r="110" fill="#dbeafe"/>
+  <rect x="202" y="74" width="116" height="202" rx="24" fill="#111827"/>
+  <rect x="218" y="94" width="84" height="158" rx="16" fill="#f8fafc"/>
+  <rect x="178" y="272" width="164" height="34" rx="17" fill="#94a3b8"/>
+  <rect x="134" y="306" width="252" height="26" rx="13" fill="#cbd5e1"/>
+  <path d="M260 274v34" stroke="#475569" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="260" cy="238" r="8" fill="#34d399"/>
+  <text x="260" y="374" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#111827">FlexDock Phone Stand</text>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="420" viewBox="0 0 520 420" role="img" aria-label="SnapCharge Magnetic Power Bank">
+  <rect width="520" height="420" fill="#ffffff"/>
+  <rect x="58" y="62" width="404" height="292" rx="38" fill="#eef2ff"/>
+  <rect x="170" y="78" width="180" height="260" rx="28" fill="#111827"/>
+  <rect x="188" y="104" width="144" height="208" rx="22" fill="#f8fafc"/>
+  <circle cx="260" cy="198" r="61" fill="#dbeafe" stroke="#2563eb" stroke-width="8"/>
+  <circle cx="260" cy="198" r="25" fill="#34d399"/>
+  <rect x="224" y="285" width="72" height="10" rx="5" fill="#111827"/>
+  <path d="M350 236l42 28-42 28z" fill="#f97316"/>
+  <text x="260" y="382" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#111827">SnapCharge Power Bank</text>
+</svg>

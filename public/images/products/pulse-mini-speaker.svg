@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="420" viewBox="0 0 520 420" role="img" aria-label="Pulse Mini Bluetooth Speaker">
+  <rect width="520" height="420" fill="#f8fafc"/>
+  <circle cx="430" cy="70" r="92" fill="#dbeafe"/>
+  <circle cx="90" cy="350" r="120" fill="#dcfce7"/>
+  <rect x="135" y="105" width="250" height="205" rx="34" fill="#111827"/>
+  <rect x="160" y="130" width="200" height="155" rx="24" fill="#1f2937"/>
+  <g fill="none" stroke="#93c5fd" stroke-width="7">
+    <circle cx="222" cy="208" r="46"/>
+    <circle cx="298" cy="208" r="46"/>
+  </g>
+  <circle cx="222" cy="208" r="18" fill="#60a5fa"/>
+  <circle cx="298" cy="208" r="18" fill="#34d399"/>
+  <rect x="215" y="322" width="90" height="12" rx="6" fill="#cbd5e1"/>
+  <text x="260" y="374" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#111827">Pulse Mini Speaker</text>
+</svg>
