@@ -11,18 +11,21 @@ export function ProductCard({ product }: { product: Product }) {
   const { addItem } = useCart();
 
   return (
-    <article className="group rounded-lg border border-line bg-white p-3 shadow-sm transition hover:-translate-y-1 hover:shadow-soft">
-      <Link href={`/products/${product.id}`} className="block overflow-hidden rounded-md bg-slate-50">
+    <article className="glow-card product-pop group rounded-lg border border-line bg-white p-3 shadow-sm hover:-translate-y-1">
+      <Link href={`/products/${product.id}`} className="relative z-10 block overflow-hidden rounded-md bg-slate-50">
         <Image
           src={product.image}
           alt={product.name}
           width={520}
           height={420}
-          className="aspect-[4/3] w-full object-cover transition duration-300 group-hover:scale-105"
+          className="aspect-[4/3] w-full object-cover transition duration-500 group-hover:scale-110 group-hover:saturate-125"
           priority={false}
         />
+        <span className="absolute left-3 top-3 rounded-full bg-white/90 px-2.5 py-1 text-[11px] font-bold uppercase tracking-wide text-accent-emerald shadow-sm backdrop-blur">
+          Trending
+        </span>
       </Link>
-      <div className="mt-4 space-y-3">
+      <div className="relative z-10 mt-4 space-y-3">
         <div>
           <div className="flex items-center justify-between gap-2">
             <p className="text-xs font-semibold uppercase tracking-wide text-accent-emerald">
@@ -35,7 +38,7 @@ export function ProductCard({ product }: { product: Product }) {
           </div>
           <Link
             href={`/products/${product.id}`}
-            className="mt-2 block min-h-12 text-base font-semibold text-ink hover:text-accent-blue"
+            className="mt-2 block min-h-12 text-base font-semibold text-ink transition hover:text-accent-blue"
           >
             {product.name}
           </Link>
@@ -51,7 +54,7 @@ export function ProductCard({ product }: { product: Product }) {
           <button
             type="button"
             onClick={() => addItem(product)}
-            className="grid h-10 w-10 place-items-center rounded-md bg-accent-blue text-white transition hover:bg-blue-700"
+            className="shine-button grid h-10 w-10 place-items-center rounded-md bg-accent-blue text-white transition hover:-translate-y-0.5 hover:bg-blue-700 hover:shadow-soft"
             aria-label={`Add ${product.name} to cart`}
           >
             <ShoppingCart size={18} />

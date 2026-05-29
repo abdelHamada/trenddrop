@@ -30,10 +30,10 @@ export default function HomePage() {
 
   return (
     <div className="bg-white">
-      <section className="border-b border-line bg-slate-50">
+      <section className="hero-mesh border-b border-line">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-[1.08fr_0.92fr] lg:items-center lg:px-8 lg:py-20">
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-wide text-accent-emerald">
+          <div className="float-in">
+            <p className="inline-flex rounded-full border border-emerald-200 bg-white/70 px-3 py-1 text-sm font-semibold uppercase tracking-wide text-accent-emerald shadow-sm backdrop-blur">
               Demo dropshipping storefront
             </p>
             <h1 className="mt-4 max-w-3xl text-5xl font-bold tracking-normal text-ink sm:text-6xl">
@@ -46,13 +46,13 @@ export default function HomePage() {
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Link
                 href="/products"
-                className="inline-flex h-12 items-center justify-center gap-2 rounded-md bg-accent-blue px-6 text-sm font-semibold text-white transition hover:bg-blue-700"
+                className="shine-button inline-flex h-12 items-center justify-center gap-2 rounded-md bg-accent-blue px-6 text-sm font-semibold text-white shadow-soft transition hover:-translate-y-0.5 hover:bg-blue-700"
               >
                 Shop demo products <ArrowRight size={18} />
               </Link>
               <Link
                 href="/admin"
-                className="inline-flex h-12 items-center justify-center rounded-md border border-line bg-white px-6 text-sm font-semibold text-ink transition hover:border-slate-300 hover:bg-slate-50"
+                className="inline-flex h-12 items-center justify-center rounded-md border border-line bg-white/80 px-6 text-sm font-semibold text-ink shadow-sm backdrop-blur transition hover:-translate-y-0.5 hover:border-slate-300 hover:bg-white"
               >
                 View admin dashboard
               </Link>
@@ -73,14 +73,14 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="rounded-lg border border-line bg-white p-4 shadow-soft">
+          <div className="glow-card slow-float rounded-lg border border-white/70 bg-white/85 p-4 shadow-soft backdrop-blur">
             <div className="overflow-hidden rounded-md bg-slate-50">
               <Image
                 src={heroProduct.image}
                 alt={heroProduct.name}
                 width={720}
                 height={540}
-                className="aspect-[4/3] w-full object-cover"
+                className="aspect-[4/3] w-full object-cover transition duration-700 hover:scale-105"
                 priority
               />
             </div>
@@ -100,7 +100,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+      <section className="surface-grid mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <SectionHeader
             eyebrow="Featured products"
@@ -109,7 +109,7 @@ export default function HomePage() {
           />
           <Link
             href="/products"
-            className="inline-flex items-center gap-2 text-sm font-semibold text-accent-blue hover:text-blue-700"
+            className="inline-flex items-center gap-2 text-sm font-semibold text-accent-blue transition hover:translate-x-1 hover:text-blue-700"
           >
             Browse all <ArrowRight size={16} />
           </Link>
@@ -121,7 +121,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="border-y border-line bg-slate-50">
+      <section className="border-y border-line bg-slate-50/80">
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
           <SectionHeader
             eyebrow="Categories"
@@ -133,7 +133,7 @@ export default function HomePage() {
               <Link
                 key={category.title}
                 href={category.href}
-                className="rounded-lg border border-line bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-soft"
+                className="glow-card lift-link rounded-lg border border-line bg-white p-6 shadow-sm"
               >
                 <h3 className="text-xl font-bold text-ink">{category.title}</h3>
                 <p className="mt-3 text-sm leading-6 text-slate-600">{category.description}</p>
@@ -154,7 +154,7 @@ export default function HomePage() {
             { icon: Truck, label: "Shipping estimates", text: "Supplier-style delivery windows on every item." },
             { icon: BadgeCheck, label: "Portfolio ready", text: "Reusable components and clean TypeScript." }
           ].map((badge) => (
-            <div key={badge.label} className="rounded-lg border border-line bg-white p-5">
+            <div key={badge.label} className="glow-card product-pop rounded-lg border border-line bg-white p-5 hover:-translate-y-1">
               <badge.icon className="h-6 w-6 text-accent-emerald" />
               <h3 className="mt-4 font-semibold text-ink">{badge.label}</h3>
               <p className="mt-2 text-sm leading-6 text-slate-500">{badge.text}</p>
@@ -163,7 +163,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-ink">
+      <section className="bg-ink bg-[radial-gradient(circle_at_20%_20%,rgba(37,99,235,0.28),transparent_24rem),radial-gradient(circle_at_86%_10%,rgba(5,150,105,0.22),transparent_20rem)]">
         <div className="mx-auto flex max-w-7xl flex-col gap-6 px-4 py-14 text-white sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
           <div>
             <p className="text-sm font-semibold uppercase tracking-wide text-emerald-300">
@@ -177,7 +177,7 @@ export default function HomePage() {
           </div>
           <Link
             href="/products"
-            className="inline-flex h-12 items-center justify-center gap-2 rounded-md bg-white px-6 text-sm font-semibold text-ink transition hover:bg-slate-100"
+            className="shine-button inline-flex h-12 items-center justify-center gap-2 rounded-md bg-white px-6 text-sm font-semibold text-ink transition hover:-translate-y-0.5 hover:bg-slate-100"
           >
             Start shopping <ArrowRight size={18} />
           </Link>

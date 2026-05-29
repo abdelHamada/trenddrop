@@ -42,9 +42,9 @@ export function ProductListingClient() {
 
   return (
     <div className="bg-white">
-      <section className="border-b border-line bg-slate-50">
+      <section className="hero-mesh border-b border-line">
         <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-          <p className="text-sm font-semibold uppercase tracking-wide text-accent-emerald">
+          <p className="inline-flex rounded-full border border-emerald-200 bg-white/70 px-3 py-1 text-sm font-semibold uppercase tracking-wide text-accent-emerald shadow-sm backdrop-blur">
             Product catalog
           </p>
           <h1 className="mt-3 text-4xl font-bold tracking-normal text-ink sm:text-5xl">
@@ -58,7 +58,7 @@ export function ProductListingClient() {
       </section>
 
       <section className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
-        <div className="rounded-lg border border-line bg-white p-4 shadow-sm">
+        <div className="glow-card rounded-lg border border-line bg-white/90 p-4 shadow-soft backdrop-blur">
           <div className="grid gap-4 lg:grid-cols-[1fr_180px_220px_190px]">
             <label className="relative block">
               <span className="sr-only">Search products</span>
@@ -67,7 +67,7 @@ export function ProductListingClient() {
                 value={query}
                 onChange={(event) => setQuery(event.target.value)}
                 placeholder="Search products, tags, or descriptions"
-                className="h-11 w-full rounded-md border border-line bg-white pl-10 pr-3 text-sm outline-none transition focus:border-accent-blue focus:ring-4 focus:ring-blue-100"
+                className="focus-spark h-11 w-full rounded-md border border-line bg-white pl-10 pr-3 text-sm outline-none transition"
               />
             </label>
 
@@ -76,7 +76,7 @@ export function ProductListingClient() {
               <select
                 value={category}
                 onChange={(event) => setCategory(event.target.value)}
-                className="h-11 w-full rounded-md border border-line bg-white px-3 text-sm outline-none transition focus:border-accent-blue focus:ring-4 focus:ring-blue-100"
+                className="focus-spark h-11 w-full rounded-md border border-line bg-white px-3 text-sm outline-none transition"
               >
                 <option value="All">All categories</option>
                 {categories.map((entry) => (
@@ -106,7 +106,7 @@ export function ProductListingClient() {
               <select
                 value={sort}
                 onChange={(event) => setSort(event.target.value as SortMode)}
-                className="h-11 w-full rounded-md border border-line bg-white px-3 text-sm outline-none transition focus:border-accent-blue focus:ring-4 focus:ring-blue-100"
+                className="focus-spark h-11 w-full rounded-md border border-line bg-white px-3 text-sm outline-none transition"
               >
                 <option value="featured">Featured savings</option>
                 <option value="price-asc">Price: low to high</option>
